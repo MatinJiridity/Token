@@ -1,0 +1,312 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="bg-container-contact100" style="background-image: url(images/icons/La-Blockchain-Ethereum-1000x675.jpg); overflow: scroll;">
+        <br>
+        <h1 style="color:  rgba(255, 255, 255, 0.647); font-size: 33px; text-align: center;">@MATINdity</h1>
+        
+        <!-- //////////////////////////////////////////////////////////////////////// -->
+
+        <div class="alert alert-info Alertmargin" role="alert">
+            <div class="row" style="text-align: center; font-size: 20px;">
+                <b>Token Specifications</b>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-8">
+                    <b>TokenOwner</b> : <span id="Owner"></span>
+                </div>
+                <div class="col-md-4">
+                    <b>TokenName</b> : <span id="TokenName"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <b>TokenSymbol</b> : <span id="TokenSymbol"></span>
+                </div>
+                <div class="col-md-4">
+                    <b>TotalSupply</b> : <span id="TotalSupply"></span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="alert alert-success Alertmargin" role="alert">
+            <div class="row" style="text-align: center;font-size: 20px;">
+                <b>CurrentAccount Specifications</b>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-8">
+                    <b>Address</b> : <span id="Address"></span>
+                </div>
+                <div class="col-md-4 ">
+                    <b>Balance(JIRI)</b> : <span id="Blence_CurrentAccount"></span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="alert alert-warning Alertmargin" role="alert">
+            <div class="row" style="text-align: center;font-size: 20px;">
+                <b>MINT Token</b>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-10">
+                    <input class="form-control bg-dark" type="number" id="amountmint" placeholder="Amount of Tokens">
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-primary btn-block" id="mint">Mint</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="alert alert-warning Alertmargin" role="alert">
+            <div class="row" style="text-align: center;font-size: 20px;">
+                <b>Transfer Token</b>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-5">
+                    <input class="form-control" type="text" id="AdressToTransfer" placeholder="Address To">
+                </div>
+                <div class="col-md-5">
+                    <input class="form-control" type="number" id="AmountAdressToTransfer" placeholder="Amount Token">
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-primary btn-block" id="transfer">Transfer</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="alert alert-warning Alertmargin" role="alert">
+            <div class="row" style="text-align: center;font-size: 20px;">
+                <b>Approve Token</b>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-5">
+                    <input class="form-control" type="text" id="AdressToApprove" placeholder="Address To">
+                </div>
+                <div class="col-md-5">
+                    <input class="form-control" type="number" id="AmountAdressToApprove" placeholder="Amount Token">
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-primary btn-block" id="Approve">Approve</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="alert alert-warning Alertmargin" role="alert">
+            <div class="row" style="text-align: center;font-size: 20px;">
+                <b>TransferFrom Token</b>
+                <b></b>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <input class="form-control" type="text" id="AdressFromTransfeFrom" placeholder="Address From">
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control" type="text" id="AdressToTransfeFrom" placeholder="Address To">
+                </div>
+            </div>  
+            <div class="row">
+                <div class="col-md-10">
+                    <input class="form-control" type="number" id="AmountAdressToTransfeFrom" placeholder="Amount Token">
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-primary  btn-block " id="TransfeFrom">TransfeFrom</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="alert alert-warning Alertmargin" role="alert">
+            <div class="row" style="text-align: center;font-size: 20px;">
+                <b>Allowance Token</b>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-5">
+                    <input class="form-control" type="text" id="AdressFromAllowance" placeholder="Address From">
+                </div>
+                <div class="col-md-5">
+                    <input class="form-control" type="text" id="AdressToAllowance" placeholder="Address To">
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-primary btn-block" id="Allowance">Allowance</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="alert alert-warning Alertmargin" role="alert">
+            <div class="row" style="text-align: center;font-size: 20px;">
+                <b>increaseAllowance Token</b>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-5">
+                    <input class="form-control" type="text" id="AdressToincreaseAllowance" placeholder="Address To">
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control" type="number" id="AmountAdressToincreaseAllowance"
+                        placeholder="Amount Token">
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-primary btn-block"
+                        id="increaseAllowance">increaseAllowance</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="alert alert-warning Alertmargin" role="alert">
+            <div class="row" style="text-align: center;font-size: 20px;">
+                <b>decreaseAllowance Token</b>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-5">
+                    <input class="form-control" type="text" id="AdressTodecreaseAllowance" placeholder="Address To">
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control" type="number" id="AmountAdressTodecreaseAllowance"
+                        placeholder="Amount Token">
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-primary btn-block"
+                        id="decreaseAllowance">decreaseAllowance</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="alert alert-warning Alertmargin" role="alert">
+            <div class="row" style="text-align: center;font-size: 20px;">
+                <b>Burn Token</b>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-8">
+                    <input class="form-control" type="number" id="amountBurn" placeholder="Amount Token">
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-primary btn-block" id="Burn">Burn</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="alert alert-warning Alertmargin" role="alert">
+            <div class="row" style="text-align: center;font-size: 20px;">
+                <b>BurnFrom Token</b>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-5">
+                    <input class="form-control" type="text" id="AdressToBurnFrom" placeholder="Address To">
+                </div>
+                <div class="col-md-5">
+                    <input class="form-control" type="number" id="AmountBurnFrom" placeholder="Amount Token">
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-primary btn-block" id="BurnFrom">BurnFrom</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="alert alert-warning Alertmargin" role="alert">
+            <div class="row" style="text-align: center;font-size: 20px;">
+                <b>Mint Cap Token</b>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-8">
+                    <input class="form-control" type="number" id="amountmintcap" placeholder="Amount Token">
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-primary btn-block" id="mintcap">Mint With Cap</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/web3new.min.js"></script>
+<script src="js/truffle-contract.js"></script>
+<script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
+<script src="js/app.js"></script>
+
+</html>
